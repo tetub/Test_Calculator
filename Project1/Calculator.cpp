@@ -123,20 +123,7 @@ auto Calculator::printfns()
 {
 	if (function.size() > 0)
 	{
-		int j = 0;
-		while (j < function.size()/10) {
-			for (auto& i : function)
-			{
-				std::vector<std::string> words = separator(function[i.first]);
-				if (words.size() == 1) {
-					setall(i.first, std::stod((getAny(words[0]))));
-				}
-				if (words.size() == 3) {
-					funci(words[0], words[1], words[2], i.first);
-				}
-			}
-			j++;
-		}
+		reload();
 		for (auto& i : function)
 		{
 			print(i.first);
@@ -271,7 +258,6 @@ double Calculator::funci(std::string identify_1, std::string simbol, std::string
 
 void Calculator::print(std::string identify)
 {
-
 	if (variable.find(identify) != variable.end())
 	{
 		if (std::isnan(variable[identify]))
@@ -283,6 +269,7 @@ void Calculator::print(std::string identify)
 				std::cout << identify << ":" << std::fixed << std::setprecision(2) << variable[identify] << std::endl;
 			}
 			else {
+				reload();
 				std::cout << identify << ":" << std::fixed << std::setprecision(2) << all[identify] << std::endl;
 			}
 		}
@@ -366,7 +353,22 @@ bool Calculator::inall(std::string identify, double value) {
 	}
 }
 
-
+void Calculator::reload() {
+	int j = 0;
+	while (j < function.size() / 10) {
+		for (auto& i : function)
+		{
+			std::vector<std::string> words = separator(function[i.first]);
+			if (words.size() == 1) {
+				setall(i.first, std::stod((getAny(words[0]))));
+			}
+			if (words.size() == 3) {
+				funci(words[0], words[1], words[2], i.first);
+			}
+		}
+		j++;
+	}
+}
 
 
 void Calculator::handler()

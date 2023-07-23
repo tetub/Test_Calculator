@@ -1,5 +1,8 @@
 ﻿  Calculator.cpp
-C:\Users\user\Desktop\Test_Calculator-main\Project1\Calculator.cpp(131,12): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\user\Desktop\Test_Calculator-main\Project1\Calculator.cpp(167,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\user\Desktop\Test_Calculator-main\Project1\Calculator.cpp(242): warning C4715: Calculator::getAny: значение возвращается не при всех путях выполнения
+C:\Users\user\Desktop\Test_Calculator-main\Project1\Calculator.cpp(150,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\user\Desktop\Test_Calculator-main\Project1\Calculator.cpp(358,11): warning C4018: <: несоответствие типов со знаком и без знака
+  main.cpp
+C:\Users\user\Desktop\Test_Calculator-main\Project1\main.cpp(8,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Создание кода...
+C:\Users\user\Desktop\Test_Calculator-main\Project1\Calculator.cpp(225): warning C4715: Calculator::getAny: значение возвращается не при всех путях выполнения
   Project1.vcxproj -> C:\Users\user\Desktop\Test_Calculator-main\Project1\Debug\Project1.exe

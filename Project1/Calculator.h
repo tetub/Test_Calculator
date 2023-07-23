@@ -6,7 +6,7 @@ private:
 	std::map<std::string, double> all;
 	std::map<std::string, double> variable;
 	std::map<std::string, std::string> function;
-
+	void reload();
 	double getall(std::string identify);
 	void setall(std::string identify, double value);
 	bool inall(std::string identify, double value);
