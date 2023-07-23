@@ -70,7 +70,7 @@ void Calculator::var(std::string identify)
 		setVariable(identify, NAN);
 	}
 	else {
-		std::cout << "this variable is identify occupied" << std::endl;
+		std::cout << "Error: this variable is identify occupied" << std::endl;
 	}
 }
 
