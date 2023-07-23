@@ -260,6 +260,7 @@ void Calculator::print(std::string identify)
 {
 	if (variable.find(identify) != variable.end())
 	{
+		reload();
 		if (std::isnan(variable[identify]))
 		{
 			std::cout << identify << ":" << "nan" << std::endl;
@@ -269,7 +270,6 @@ void Calculator::print(std::string identify)
 				std::cout << identify << ":" << std::fixed << std::setprecision(2) << variable[identify] << std::endl;
 			}
 			else {
-				reload();
 				std::cout << identify << ":" << std::fixed << std::setprecision(2) << all[identify] << std::endl;
 			}
 		}
