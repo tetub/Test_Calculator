@@ -1,0 +1,4 @@
+﻿  Calculator.cpp
+C:\Users\user\source\repos\Project1\Project1\Calculator.cpp(155,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\user\source\repos\Project1\Project1\Calculator.cpp(331,3): error C2171: !: недопустимо для операндов типа "void"
+C:\Users\user\source\repos\Project1\Project1\Calculator.cpp(331,3): error C2296: ||: недопустимо, левый операнд имеет тип "void"
