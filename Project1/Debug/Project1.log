@@ -1,0 +1,5 @@
+﻿  Calculator.cpp
+C:\Users\user\Desktop\Test_Calculator-main\Project1\Calculator.cpp(131,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\user\Desktop\Test_Calculator-main\Project1\Calculator.cpp(167,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\user\Desktop\Test_Calculator-main\Project1\Calculator.cpp(242): warning C4715: Calculator::getAny: значение возвращается не при всех путях выполнения
+  Project1.vcxproj -> C:\Users\user\Desktop\Test_Calculator-main\Project1\Debug\Project1.exe
