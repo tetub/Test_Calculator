@@ -147,7 +147,7 @@ std::vector<std::string> Calculator::separator(std::string text)
 	std::vector<std::string> words;
 	std::string word;
 	bool add = false;
-	for (int i = 0; i < text.size(); i++)
+	for (std::size_t i = 0; i < text.size(); i++)
 	{
 		if (text[i] == delimiters[0] || text[i] == delimiters[1] || text[i] == delimiters[2] || text[i] == delimiters[3] || text[i] == delimiters[4] || text[i] == delimiters[5]) 
 		{
@@ -289,9 +289,9 @@ void Calculator::print(std::string identify)
 	}
 }
 
-int Calculator::switcher(std::vector<std::string> words)
+std::size_t Calculator::switcher(std::vector<std::string> words)
 {
-	int answer = 0;
+	std::size_t answer = 0;
 	if (words[0] == "var") {
 		answer = 1;
 	}
@@ -354,7 +354,7 @@ bool Calculator::inall(std::string identify, double value) {
 }
 
 void Calculator::reload() {
-	int j = 0;
+	std::size_t j = 0;
 	while (j < function.size() / 10) {
 		for (auto& i : function)
 		{
@@ -376,7 +376,7 @@ void Calculator::handler()
 	std::vector<std::string> words;
 	std::string text;
 	std::string an;
-	int infinity = 0;
+	std::size_t infinity = 0;
 	testIscorrectIdentify(); //test (syntax: correct or incorrect name identify)
 
 	while (infinity == 0)
