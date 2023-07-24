@@ -25,7 +25,7 @@ private:
 	auto printfns();
 	std::vector<std::string> separator(std::string text);
 	std::string input();
-	int switcher(std::vector<std::string>);
+	std::size_t switcher(std::vector<std::string>);
 
 public:
 	void handler();
